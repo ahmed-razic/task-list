@@ -114,6 +114,8 @@ function clearTasks() {
   while (taskList.firstChild) {
     taskList.removeChild(taskList.firstChild);
   }
+
+  localStorage.clear();
 }
 
 function filterTasks(e) {
